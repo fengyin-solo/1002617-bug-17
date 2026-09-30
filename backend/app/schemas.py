@@ -19,6 +19,7 @@ class ActionResult(BaseModel):
     ok: bool
     message: str
     entry: dict[str, Any] | None = None
+    duplicate: bool = False
 
 
 class EntryPayload(BaseModel):
@@ -26,6 +27,7 @@ class EntryPayload(BaseModel):
 
     values: dict[str, Any] = Field(default_factory=dict)
     remark: str | None = None
+    action: str | None = None
 
 
 

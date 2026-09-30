@@ -31,5 +31,19 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
 .btn.ghost { background: transparent; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
-.page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.page-foot { display: flex; justify-content: space-between; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.success-text { color: #027a48; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.panel h3 { margin: 0 0 10px; font-size: 15px; }
+.record-table { margin-bottom: 8px; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, .42); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; background: #fff; border-radius: 10px; padding: 18px; box-shadow: 0 18px 48px rgba(15, 23, 42, .24); }
+.modal h3 { margin: 0 0 14px; }
+.modal-field { display: grid; gap: 4px; margin-bottom: 10px; font-size: 13px; }
+.modal-field input, .modal-field select, .filter-item input, .filter-item select { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.detail-list { display: grid; grid-template-columns: 130px 1fr; gap: 8px 12px; margin: 0; font-size: 13px; }
+.detail-list dt { color: var(--muted); }
+.detail-list dd { margin: 0; }
